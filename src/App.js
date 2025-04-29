@@ -1,23 +1,16 @@
 import logo from './logo.svg';
+import ChallengeOfTheDay from './components/ChallengeOfTheDay';
+import AddChallenge from './components/AddChallenge';
+import ChallengeHistory from './components/ChallengeHistory';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1>Daily Random Challenge</h1>
+      <ChallengeOfTheDay/>
+      <AddChallenge/>
+      <ChallengeHistory/>
     </div>
   );
 }
